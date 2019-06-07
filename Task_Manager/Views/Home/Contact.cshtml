@@ -1,0 +1,173 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="About&Contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <title>About&Contact</title>
+    <style>
+        body {
+            height: calc(100vh - 10px);
+            margin: 5px;
+        }
+
+        #Box {
+            height: 100%;
+        }
+
+        #Box {
+            display: flex;
+        }
+
+       
+
+        #Content {
+            display: flex;
+            flex-basis: 80%;
+            flex-direction: column;
+            border: 1px solid lightblue;
+        }
+
+        .font1class {
+            font-weight: bold;
+            margin: 20px;
+            font-size: 40px;
+            color: midnightblue;
+        }
+
+        .font2class {
+            margin: 0px 30px 10px 25px;
+            font-size: 15px;
+        }
+
+        #contact {
+            display: flex;
+            height: 100%;
+            margin: 10px;
+        }
+
+        #form {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+
+            #form * {
+                display: flex;
+                flex: 1;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+        .formclass {
+            margin: 0px 10px;
+        }
+
+        #message {
+            width: initial;
+        }
+
+        #button-Bar {
+            margin: 0px 10px;
+            width: 50%;
+            height: 30%;
+        }
+
+        #text {
+            padding: 25px;
+            flex: 1;
+            height: 100%;
+            margin: 0px 0px 10px 25px;
+        }
+
+            #text * {
+                margin: 5px;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="Box">
+        
+        <div id="Content">
+            <div class="font1class">
+                <font>ABOUT</font>
+            </div>
+            <div class="font2class">
+                <font>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus adipisci ab non porro, provident
+                    iste laboriosam. Excepturi, voluptas harum? Earum aspernatur vero non tempore! Necessitatibus dolore
+                    perspiciatis temporibus veritatis, culpa deserunt aliquam beatae, eligendi dolor facilis nobis voluptate
+                    delectus nulla mollitia corrupti quia amet. Odit ullam possimus sed a laudantium sunt numquam tempora
+                    molestias! Inventore amet magnam, atque harum temporibus voluptatum quae sapiente, corporis voluptates
+                    fugiat nostrum beatae quod officia minima culpa! Possimus aperiam adipisci cum ipsum fugit inventore
+                    quo consequatur, iusto sequi similique temporibus velit facilis unde eos facere blanditiis ea provident
+                    ullam! Non corporis itaque aspernatur voluptatibus?
+                </font>
+            </div>
+            <div class="font1class">
+                <font>CONTACT</font>
+            </div>
+            <div id="contact">
+                <div id="form">
+                    <div id="name-email">
+                        <div class="formclass">
+                            <input id="name-Bar" type="text" name="search-Bar" value="Name">
+                        </div>
+                        <div class="formclass">
+                            <input id="email-Bar" type="text" name="search-Bar" value="Email">
+                        </div>
+                    </div>
+                    <div id="message">
+                        <textarea rows="5" cols="57">Type your message here... </textarea>
+                    </div>
+                    <div id="button">
+                        <button id="button-Bar">SUBMIT</button>
+                    </div>
+                </div>
+                <div id="text" class="font2class">
+                    <div>
+                        <font>
+                            To find more about our services or to help us with your work and corporate identity, please fill
+                            in the form and click on submit. Alternatively, please email us at info@websitename.com or you
+                            can call us on:
+                        </font>
+                    </div>
+                    <div>
+                        <font>
+                            Tel:00-111-222-333
+                        </font>
+                    </div>
+                    <div>
+                        <font>
+                            Skype:Username
+                        </font>
+                    </div>
+                    <div>
+                        <font>
+                            E-mail:info@website.com
+                        </font>
+                    </div>
+                    <div>
+                        <font>
+                            Website: www.websitename.com
+                        </font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

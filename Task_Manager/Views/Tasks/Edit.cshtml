@@ -1,0 +1,63 @@
+﻿@model Task_Manager.Models.Task
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Task</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">When?</span>
+                @Html.TextBoxFor(x => x.when, null, new { @class = "form-control" })
+
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Where?</span>
+                @Html.TextBoxFor(x => x.where, null, new { @class = "form-control" })
+
+
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Why?</span>
+                @Html.TextBoxFor(x => x.why, null, new { @class = "form-control" })
+            </div>
+
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">What (to bring)?</span>
+                @Html.TextBox("what", null, new { @class = "form-control" })
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">How much?</span>
+                @Html.TextBox("how_much", null, new { @class = "form-control" })
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">How long?</span>
+                @Html.TextBox("how_long", null, new { @class = "form-control" })
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

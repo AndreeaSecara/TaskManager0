@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    body {
+        height: calc(100vh - 10px);
+        margin: 5px;
+    }
+
+    #Box {
+        height: 100%;
+    }
+
+    #Box {
+        display: flex;
+    }
+
+
+    #Pic {
+        display: flex;
+        flex-basis: 80%;
+        background-image: url(http://www.ox.ac.uk/sites/files/oxford/styles/ow_medium_feature/public/field/field_image_main/Supernova.jpg?itok=4XfLJS08);
+    }
+
+    #text {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    .textclass {
+        display: flex;
+        align-items: center;
+    }
+
+    #divone {
+        flex: 3;
+    }
+
+    #divstory {
+        flex: 2;
+    }
+
+    #divlargegalaxies {
+        width: 50%;
+        flex-direction: column;
+        flex: 7;
+        justify-content: flex-start;
+        align-items: unset;
+    }
+
+    #line {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+
+        #line * {
+            flex: 1;
+        }
+
+    #line1 {
+        border-bottom: 3px solid lightgray;
+    }
+
+    #line2 {
+        border-bottom: 1px solid lightgray;
+    }
+
+    #divminitext {
+        flex: 2;
+    }
+
+    #one {
+        font-family: arial;
+        color: white;
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    #story {
+        font-family: arial;
+        color: white;
+        font-size: 10px;
+    }
+
+    #large {
+        font-family: arial;
+        color: white;
+        font-size: 100px;
+    }
+
+    #galaxies {
+        font-family: arial;
+        color: white;
+        font-size: 100px;
+    }
+
+    #minitext {
+        font-family: arial;
+        color: white;
+        font-size: 10;
+    }
+
+    #space {
+        flex: 1;
+    }
+</style>
+<div id="Box">
+    
+    <div id="Pic">
+        <div id="text">
+            
+            <div id="divlargegalaxies">
+                <font id="large">TASK</font>
+                <font id="galaxies">MANAGER</font>
+            </div>
+            <div id="line">
+                <div id="line1">
+
+                </div>
+                <div id="line2">
+
+                </div>
+            </div>
+            <div id="divminitext" class="textclass">
+                <font id="minitext">Lorem ipsum dolor sit amet.</font>
+            </div>
+        </div>
+        <div id="space">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <link rel="stylesheet" href="Events.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <style>
+        body {
+            margin: 5px;
+        }
+
+        #Box {
+            height: 100%;
+        }
+
+        #Box {
+            display: flex;
+        }
+
+        #Bar {
+            display: flex;
+            flex-basis: 20%;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 80px 0px;
+            height: calc(100vh - 170px);
+            position: sticky;
+        }
+
+        .barclass {
+            display: flex;
+            justify-content: center;
+        }
+
+        #delight {
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+
+        #Content {
+            display: flex;
+            flex-basis: 80%;
+            flex-direction: column;
+        }
+
+        .eventlist {
+            display: flex;
+            margin: 5px 10px 5px 0.5px;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            width: 99%;
+            flex-direction: column;
+        }
+
+        .font1class {
+            font-weight: bold;
+            margin: 10px;
+            font-size: 20px;
+            color: midnightblue;
+        }
+
+        .font2class {
+            margin: 0px 30px 10px 25px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Box">
+        
+        <div id="Content">
+            @foreach (var task in ViewData["Tasks"] as IEnumerable<Task_Manager.Models.Task>)
+            {
+            <div class="eventlist">
+                <div class="font1class">
+                    <font>
+                       @task.when-@task.where
+                    </font>
+
+                </div>
+                <div class="font2class">
+                    <font>
+                       <pre>
+Why?              @task.why 
+What to bring?    @task.what
+How much money?   @task.how_much
+How long?         @task.how_long
+                             </pre>
+                    </font>
+                </div>
+            </div>
+            }
+</div>
+    </div>
+</body>
+
+</html>
